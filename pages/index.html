@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Página para busca por Deputados em Mandato">
+        <title>Busca por Deputados em Mandato</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body class="py-2">
+        <main>     
+            <div class="container mt-2">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-12">
+                        <div class="card p-4 mt-3">
+                            <h3 class="heading mt-5 text-center">Buscar Deputados do Brasil</h3>
+                            <h4 class="heading mt-5 ml-5 text-left">Busca por nome</h4>
+                            <div class="d-flex justify-content-center px-5">                                
+                                <div class="search"> 
+                                    <input type="text" class="search-input" placeholder="Digite o nome do deputado" name="busca">
+                                    <a href="#" id="buscar" class="search-icon"><i class="fa fa-search"></i></a>
+                                </div>                                
+                            </div>
+                            <h4 class="heading mt-5 ml-5 mb-4 text-left">Busca por estado</h4>
+                            <div class="d-flex justify-content-center px-5 pb-5">                  
+                                <select class="form-select" aria-label="lista-estados" id="lista-estados">
+                                    <option>Selecione o estado</option>
+                                </select>                                
+                            </div>                                                        
+                            <div class="table-responsive m-5 mt-3">
+                                <table class="table table-light" id="tabela-resultados" style="display: none;">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Partido</th>
+                                        <th scope="col">Estado/Região</th>
+                                        <th scope="col">Cargo atual</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>                                                              
+                                    </tbody>
+                                  </table>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
